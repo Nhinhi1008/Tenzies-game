@@ -1,0 +1,144 @@
+
+.container{
+  background-color: rgb(249, 246, 241);
+  padding: 32px;
+  margin: 30px;
+  border-radius: 15px;
+  text-align: center;
+  align-items: center;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4cap;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-decoration: solid;
+}
+
+.heading-text{
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.dice-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin: 10px auto;
+}
+
+.die {
+  background-color: #ffffff;
+  border: 2px solid #ffe2e2;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+}
+
+.dot-container {
+  display: grid;
+  grid-template-areas: "top-left top-right" "middle-left middle-right""bottom-left bottom-right";
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+}
+
+/* .die:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+} */
+
+button {
+  margin-top: 20px;
+  background-color: #368aae;
+  color: white;
+  padding: 8px 16px;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #060606;
+}
+
+.line-menu h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.line-menu p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.line{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+
+
+.top-left {
+  grid-area: top left;
+}
+
+.top-right {
+  grid-area: top right;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+}
+
+.middle-left {
+  grid-area: middle-left;
+}
+
+.middle-right {
+  grid-area: middle-right;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+}
